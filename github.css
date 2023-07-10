@@ -1,6 +1,7 @@
-.Btn {
+.gitBtn {
     border: none;
     border-radius: 50%;
+    padding: 0;
     width: 45px;
     height: 45px;
     display: flex;
@@ -30,18 +31,19 @@
     transition-duration: .4s;
   }
   
-  .Btn:hover {
+  .gitBtn:hover {
+    padding: 0 65px;
     width: 110px;
     transition-duration: .4s;
     border-radius: 30px;
   }
   
-  .Btn:hover .text {
+  .gitBtn:hover .text {
     opacity: 1;
     transition-duration: .4s;
   }
   
-  .Btn:hover .svgIcon {
+  .gitBtn:hover .svgIcon {
     opacity: 0;
     transition-duration: .3s;
   }

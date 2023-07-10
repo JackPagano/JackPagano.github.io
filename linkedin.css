@@ -1,6 +1,7 @@
-.Btn {
+.linkedBtn {
     border: none;
     border-radius: 50%;
+    padding: 0;
     width: 45px;
     height: 45px;
     display: flex;
@@ -30,18 +31,19 @@
     transition-duration: .4s;
   }
   
-  .Btn:hover {
-    width: 110px;
+  .linkedBtn:hover {
+    padding: 0 65px;
+    width: 45px;
     transition-duration: .4s;
     border-radius: 30px;
   }
   
-  .Btn:hover .text {
+  .linkedBtn:hover .text {
     opacity: 1;
     transition-duration: .4s;
   }
   
-  .Btn:hover .svgIcon {
+  .linkedBtn:hover .svgIcon {
     opacity: 0;
     transition-duration: .3s;
   }
