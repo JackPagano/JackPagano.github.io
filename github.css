@@ -1,7 +1,6 @@
 .gitBtn {
     border: none;
     border-radius: 50%;
-    padding: 0;
     width: 45px;
     height: 45px;
     display: flex;
@@ -32,7 +31,6 @@
   }
   
   .gitBtn:hover {
-    padding: 0 65px;
     width: 110px;
     transition-duration: .4s;
     border-radius: 30px;
