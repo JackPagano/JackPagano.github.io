@@ -40,7 +40,7 @@
 .scrollBtn .text > * {
   opacity: 1;
   font-size: 1.3rem;
-  transition: 0.2s;
+  /* transition: 0.2s; */
   margin-left: 4px;
 }
 
@@ -61,7 +61,7 @@
 .scrollBtn:hover .text > * {
   opacity: 0;
   /* transform: translateY(-60px); */
-  transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+  /* transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s; */
 }
 
 .scrollBtn:hover .clone > :nth-child(1) {
@@ -92,8 +92,8 @@
   transform: translateY(-50%) rotate(-90deg);
 }
 
-/* #scrollButton {
+#scrollButton {
   position: fixed;
   bottom: -4px;
   right: 10px;
-} */
+}
