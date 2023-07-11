@@ -1,7 +1,7 @@
 window.onscroll = function() {
   var scrollBtn = document.getElementById('scrollBtn');
-  var scrollPosition = window.pageYOffset;
-  var scrollLimit = 10 * getLineHeight(); // modify 10
+  var scrollPosition = window.scrollY;
+  var scrollLimit = 20 * getLineHeight(); // modify 10
 
   if (scrollPosition > scrollLimit) {
     scrollBtn.style.position = 'fixed';
