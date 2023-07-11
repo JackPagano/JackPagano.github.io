@@ -54,16 +54,16 @@
 .scrollBtn:hover .clone > * {
   opacity: 1;
   transform: translateY(0px);
-  /* transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s; */
+  transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
 }
 
 .scrollBtn:hover .text > * {
   opacity: 0;
   /* transform: translateY(-60px); */
-  /* transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s; */
+  transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
 }
 
-/* .scrollBtn:hover .clone > :nth-child(1) {
+.scrollBtn:hover .clone > :nth-child(1) {
   transition-delay: 0.15s;
 }
 
@@ -77,7 +77,7 @@
 
 .scrollBtn:hover .clone > :nth-child(4) {
   transition-delay: 0.3s;
-} */
+}
 /* icon style and hover */
 .scrollBtn svg {
   width: 20px;
