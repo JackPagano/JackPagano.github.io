@@ -1,49 +1,49 @@
 .menuBtn {
-    width: 150px;
-    height: 50px;
-    border-radius: 5px;
-    border: none;
-    transition: all 0.5s ease-in-out;
-    font-size: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    background: #040f16;
-    color: #f5f5f5;
-  }
-  
-  .menuBtn:hover {
-    box-shadow: 0 0 20px 0px #2e2e2e3a;
-  }
-  
-  .menuBtn .icon {
-    position: absolute;
-    height: 40px;
-    width: 70px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.5s;
-  }
-  
-  .menuBtn .text {
-    transform: translateX(55px);
-  }
-  
-  .menuBtn:hover .icon {
-    width: 175px;
-  }
-  
-  .menuBtn:hover .text {
-    transition: all 0.5s;
-    opacity: 0;
-  }
-  
-  .menuBtn:focus {
-    outline: none;
-  }
-  
-  .menuBtn:active .icon {
-    transform: scale(0.85);
-  }
+  width: 150px;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  transition: all 0.5s ease-in-out;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  background: #040f16;
+  color: #f5f5f5;
+}
+
+.menuBtn:hover {
+  box-shadow: 0 0 20px 0px #2e2e2e3a;
+}
+
+.menuBtn .icon {
+  position: absolute;
+  height: 40px;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+}
+
+.menuBtn .text {
+  transform: translateX(55px);
+}
+
+.menuBtn:hover .icon {
+  width: 175px;
+}
+
+.menuBtn:hover .text {
+  transition: all 0.5s;
+  opacity: 0;
+}
+
+.menuBtn:focus {
+  outline: none;
+}
+
+.menuBtn:active .icon {
+  transform: scale(0.85);
+}
