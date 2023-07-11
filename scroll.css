@@ -34,7 +34,7 @@
   transform-origin: bottom left;
 }
 
-.scrollBtn .clone > *,.scrollBtn .text > * {
+.scrollBtn .clone > *,.scrollBtn .orig > * {
   opacity: 1;
   font-size: 1.3rem;
   transition: 0.2s;
@@ -51,7 +51,7 @@
   transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
 }
 
-.scrollBtn:hover .text > * {
+.scrollBtn:hover .orig > * {
   opacity: 1;
   transform: translateY(-60px);
   transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
