@@ -9,3 +9,9 @@ window.addEventListener('scroll', function() {
     }
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+  var scrollButton = document.getElementById('scrollButton');
+  scrollButton.style.display = 'none';
+  scrollButton.disabled = true;
+});
+
