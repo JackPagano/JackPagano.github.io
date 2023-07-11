@@ -1,3 +1,6 @@
+
+
+/* scroll.css */
 .scrollBtn {
   width: 140px;
   height: 56px;
@@ -34,7 +37,7 @@
   transform-origin: bottom left;
 }
 
-.scrollBtn .clone > *,.scrollBtn .text > * {
+.scrollBtn .text > * {
   opacity: 1;
   font-size: 1.3rem;
   transition: 0.2s;
@@ -42,6 +45,10 @@
 }
 
 .scrollBtn .clone > * {
+  opacity: 0;
+  font-size: 1.3rem;
+  transition: 0.2s;
+  margin-left: 4px;
   transform: translateY(60px);
 }
 
@@ -52,8 +59,8 @@
 }
 
 .scrollBtn:hover .text > * {
-  opacity: 1;
-  transform: translateY(-60px);
+  opacity: 0;
+  /* transform: translateY(-60px); */
   transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
 }
 
