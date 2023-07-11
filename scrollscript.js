@@ -1,24 +1,11 @@
-window.onscroll = function() {
-  var scrollBtn = document.getElementById('scrollBtn');
-  var scrollPosition = window.scrollY;
-  var scrollLimit = 20 * getLineHeight(); // modify 10
-
-  if (scrollPosition > scrollLimit) {
-    scrollBtn.style.position = 'fixed';
-    scrollBtn.style.bottom = '20px'; // Adjust for button placement
-    scrollBtn.style.right = '20px';
-  } else {
-    scrollBtn.style.position = 'static';
-  }
-}
-
-function getLineHeight() {
-  var temp = document.createElement('div');
-  temp.style['font-size'] = window.getComputedStyle(document.body)['font-size'];
-  temp.innerHTML = 'A';
-  document.body.appendChild(temp);
-  var lineHeight = temp.offsetHeight;
-  document.body.removeChild(temp);
-  return lineHeight;
-}
+window.addEventListener('scroll', function() {
+    var scrollButton = document.getElementById('scrollButton');
+    if (window.scrollY >= 400) { // enable button if user scrolls down 20 lines (approx. 400px)
+      scrollButton.style.display = 'block';
+      scrollButton.disabled = false;
+    } else { // disable button if user scrolls less than 20 lines
+      scrollButton.style.display = 'none';
+      scrollButton.disabled = true;
+    }
+});
 

@@ -84,3 +84,9 @@
 .scrollBtn:hover svg {
   transform: translateY(-50%) rotate(-90deg);
 }
+
+#scrollButton {
+  position: fixed;
+  bottom: -4px;
+  right: 10px;
+}
