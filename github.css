@@ -3,32 +3,26 @@
   border-radius: 50%;
   width: 45px;
   height: 45px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: flex;  
+  align-items: center;  
+  justify-content: center; 
   transition-duration: .4s;
   cursor: pointer;
-  position: relative;
+  position: relative; 
   background-color: rgb(31, 31, 31);
-  overflow: hidden;
-}
-
-.svgIcon {
-  transition-duration: .3s;
-}
-
-.svgIcon path {
-  fill: white;
+  overflow: hidden; 
+  padding: 0;
 }
 
 .text {
-  position: absolute;
+  display: none;
   color: rgb(255, 255, 255);
-  width: 120px;
-  right: 40px;
   font-weight: 600;
   opacity: 0;
   transition-duration: .4s;
+  margin: 0;
+  text-align: center; 
+  width: 100%; 
 }
 
 .gitBtn:hover {
@@ -38,6 +32,7 @@
 }
 
 .gitBtn:hover .text {
+  display: inline; 
   opacity: 1;
   transition-duration: .4s;
 }

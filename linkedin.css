@@ -3,45 +3,41 @@
   border-radius: 50%;
   width: 45px;
   height: 45px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: flex;  
+  align-items: center;  
+  justify-content: center; 
   transition-duration: .4s;
   cursor: pointer;
-  position: relative;
+  position: relative; 
   background-color: #0A66C2;
-  overflow: hidden;
-}
-
-.svgIcon {
-  transition-duration: .3s;
-}
-
-.svgIcon path {
-  fill: white;
+  overflow: hidden; 
+  padding: 0;
 }
 
 .text {
-  position: absolute;
+  display: none;
   color: rgb(255, 255, 255);
-  width: 120px;
   font-weight: 600;
   opacity: 0;
   transition-duration: .4s;
+  margin: 0;
+  text-align: center; 
+  width: 100%; 
 }
 
-.linkedBtn:hover {
+.Btn:hover {
   width: 110px;
   transition-duration: .4s;
   border-radius: 30px;
 }
 
-.linkedBtn:hover .text {
+.gitBtn:hover .text {
+  display: inline; 
   opacity: 1;
   transition-duration: .4s;
 }
 
-.linkedBtn:hover .svgIcon {
+.gitBtn:hover .svgIcon {
   opacity: 0;
   transition-duration: .3s;
 }
