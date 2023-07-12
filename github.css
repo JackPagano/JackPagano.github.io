@@ -25,6 +25,13 @@
   width: 100%; 
 }
 
+.svgIcon {
+  display: flex;  
+  align-items: center;
+  justify-content: center;
+  transition-duration: .3s;
+}
+
 .gitBtn:hover {
   width: 110px;
   transition-duration: .4s;
