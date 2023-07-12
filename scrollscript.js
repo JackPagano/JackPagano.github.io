@@ -1,5 +1,9 @@
-scrollButton.style.display = 'none';
-scrollButton.disabled = true;
+// disable button initially
+document.addEventListener("DOMContentLoaded", function() {
+    var scrollButton = document.getElementById('scrollButton');
+    scrollButton.style.display = 'none';
+    scrollButton.disabled = true;
+});
 
 window.addEventListener('scroll', function() {
     var scrollButton = document.getElementById('scrollButton');
