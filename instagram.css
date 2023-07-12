@@ -37,7 +37,7 @@
   display: inline;
   opacity: 1;
   transition-duration: .4s;
-  padding-right: 20px;
+  padding-right: 17px;
 }
 
 .instaBtn:hover .svgIcon {
