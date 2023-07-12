@@ -25,6 +25,7 @@
   position: absolute;
   color: rgb(255, 255, 255);
   width: 120px;
+  right: 40px;
   font-weight: 600;
   opacity: 0;
   transition-duration: .4s;
