@@ -26,7 +26,8 @@
 }
 
 .svgIcon {
-  display: flex;  
+  display: flex;
+  color: rgb(255, 255, 255);  
   align-items: center;
   justify-content: center;
   transition-duration: .3s;
