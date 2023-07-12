@@ -19,7 +19,7 @@
   padding: 0;
 }
 
-.instaText {
+.text {
   display: none;
   color: rgb(255, 255, 255);
   font-weight: 600;
@@ -33,7 +33,7 @@
   border-radius: 30px;
 }
 
-.instaBtn:hover .instaText {
+.instaBtn:hover .text {
   display: inline;
   opacity: 1;
   transition-duration: .4s;
