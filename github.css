@@ -15,7 +15,7 @@
   padding: 0;
 }
 
-.text {
+.gitText {
   display: none;
   color: rgb(255, 255, 255);
   font-weight: 600;
@@ -29,7 +29,7 @@
   border-radius: 30px;
 }
 
-.gitBtn:hover .text {
+.gitBtn:hover .gitText {
   display: inline;
   opacity: 1;
   transition-duration: .4s;

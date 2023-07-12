@@ -15,7 +15,7 @@
   padding: 0;
 }
 
-.text {
+.linkedText {
   display: none;
   color: rgb(255, 255, 255);
   font-weight: 600;
@@ -36,7 +36,7 @@
   border-radius: 30px;
 }
 
-.linkedBtn:hover .text {
+.linkedBtn:hover .linkedText {
   display: inline;
   opacity: 1;
   transition-duration: .4s;
