@@ -1,0 +1,38 @@
+.light-theme {
+    --bg-color: white;
+    --text-color: black;
+    --navbar-bg-color: navy;
+    --navbar-text-color: white;
+}
+
+.dark-theme {
+    --bg-color: navy;
+    --text-color: white;
+    --navbar-bg-color: white;
+    --navbar-text-color: black;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+#navbar {
+    background-color: var(--navbar-bg-color);
+}
+
+#navbar ul li a {
+    color: var(--navbar-text-color);
+}
+
+#navbar {
+    background-color: var(--navbar-bg-color);
+}
+
+#scrollButton{
+    color: var(--text-color);
+}
+
+#navbar #profile li {
+    color: var(--navbar-text-color);
+}
