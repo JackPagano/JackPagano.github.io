@@ -1,12 +1,12 @@
 .scrollBtn {
-  width: 140px;
-  height: 56px;
-  overflow: hidden;
-  border: none;
-  color: #000000;
-  background: none;
-  position: relative;
-  padding-bottom: 2em;
+    width: 140px;
+    height: 56px;
+    overflow: hidden;
+    border: none;
+    color: #000000;
+    background: none;
+    position: relative;
+    padding-bottom: 2em;
 }
 
 .scrollBtn > div,.scrollBtn > svg {
@@ -93,7 +93,7 @@ right: 10px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  :root {
-      scroll-behavior: smooth;
-  }
+    :root {
+        scroll-behavior: smooth;
+    }
 }
