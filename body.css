@@ -1,24 +1,39 @@
-/* Styling for Personal Information Section */
 #personal-info {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 100vh;
+  height: 70vh;
+  flex-wrap: wrap;
 }
 
 #description {
-  width: 40%;
+  width: 42%;
   text-align: center;
 }
 
 #image-wrapper {
-  width: 40%;
+  width: 42%;
   display: flex;
   justify-content: center;
 }
 
 #profile-picture {
   border-radius: 50%;
-  width: 400px; /* Change the width to your desired value */
-  height: 400px;
+  display: flex;
+  max-width: 60%;
+  height: auto;
+}
+
+@media screen and (min-width: 930px) {
+  #description {
+      width: 42%;
+      padding-left: 8%;
+  }
+  #image-wrapper {
+      width: 42%;
+      padding-right: 8%;
+  }
+  #profile-picture {
+      max-width: 350px;
+  }
 }
