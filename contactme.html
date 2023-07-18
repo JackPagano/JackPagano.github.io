@@ -4,11 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <meta http-equiv="Refresh" content="10"> -->
+
+    <title>My Digital Portfolio - Contact Me</title>
+
     <link rel="stylesheet" href="styles.css">
-
-    <title>My Digital Portfolio - About Me</title>
-
     <script src="scripts.js"></script>
     <script src="https://kit.fontawesome.com/cee519a1ca.js" crossorigin="anonymous"></script>
 </head>
@@ -43,11 +42,22 @@
         </ul>
     </div>
 
-    <!-- About Me -->
-    <main>
-        <h1>About Me</h1>
-        <p>Born in London and raised in New York, my high school years were filled with athletic pursuits, particularly football and lacrosse. Yet, alongside sports, a passion for computer science took root. Coding was a captivating challenge, similar to unraveling a puzzle, which perfectly satisfied my love for logic.</p>
-    </main>
+    <!-- Contact Me -->
+    <h1>Contact me</h1>
+    <h3>Email functionality not yet created (Looking into server-side implementation)</h3>
+    <h3>Please email me at Pags12189@gmail.com for now</h3>
+    <form id="contact-form" action="sendemail.php" method="POST">
+        <div>
+            <input type="text" id="name" placeholder="Name">
+            <input type="email" id="email" placeholder="Email">
+        </div>
+        <div>
+            <textarea id="message" placeholder="Message"></textarea>
+        </div>
+        <div>
+            <button type="submit" id="sendEmail">Send Email</button>
+        </div>
+    </form>
     
     <!-- Links -->
     <div>

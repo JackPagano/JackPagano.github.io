@@ -1,4 +1,6 @@
-/* body.css */
+
+
+/* navbar.css */
 body {
     font-family: Arial, sans-serif;
     padding-top: 0;
@@ -362,7 +364,7 @@ body {
     color: var(--navbar-text-color);
 }
 
-/* personal-info */
+/* body.css */
 #personal-info {
     display: flex;
     justify-content: space-around;
