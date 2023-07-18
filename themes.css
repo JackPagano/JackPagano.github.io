@@ -1,15 +1,15 @@
 .light-theme {
-    --bg-color: white;
-    --text-color: black;
-    --navbar-bg-color: navy;
-    --navbar-text-color: white;
+    --bg-color: #bababa;
+    --text-color: #0d1c3f;
+    --navbar-bg-color: #0d1c3f;
+    --navbar-text-color: #bababa;
 }
 
 .dark-theme {
-    --bg-color: navy;
-    --text-color: white;
-    --navbar-bg-color: white;
-    --navbar-text-color: black;
+    --bg-color: #0d1c3f;
+    --text-color: #bababa;
+    --navbar-bg-color: #bababa;
+    --navbar-text-color: #0d1c3f;
 }
 
 body {
