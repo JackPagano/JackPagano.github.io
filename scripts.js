@@ -15,24 +15,22 @@ document.addEventListener("DOMContentLoaded", function() {
   //   // Use a library like Axios or fetch to send the data to a server-side script for email processing
   // });
 
-  // Current Page Underline
-  const navLinks = document.querySelectorAll('.nav-link');
-  navLinks.forEach(function(link) {
-    link.addEventListener('click', function(event) {
-      event.preventDefault();
-      const activeLink = document.querySelector('.nav-link.active');
-      if (activeLink) {
-        activeLink.classList.remove('active');
-      }
-      this.classList.add('active');
-    });
-  });
+  // Function to set the active link based on the current page URL
+  function setActiveLink() {
+    const currentPageUrl = window.location.href;
+    const navLinks = document.querySelectorAll("#navbar ul li a");
 
-  const currentPage = window.location.pathname.split('/').pop();
-  const activeLink = document.querySelector(`.nav-link[href="${currentPage}"]`);
-  if (activeLink) {
-    activeLink.classList.add('active');
+    navLinks.forEach((link) => {
+      if (link.href === currentPageUrl) {
+        link.classList.add("active");
+      } else {
+        link.classList.remove("active");
+      }
+    });
   }
+
+  // Set the active link on page load
+  setActiveLink();
   
   // Theme Switch Button
   function toggleTheme() {

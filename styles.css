@@ -1,10 +1,41 @@
 
 
-/* navbar.css */
+/* styles.css */
+.light-theme {
+    --bg-color: #dedede;
+    --text-color: #000000;
+    --navbar-bg-color: #363636;
+    --navbar-text-color: #dedede;
+    --hover-link-bg-color: #424242;
+    --hover-link-color: #ffffff;
+    --active-link-bg-color: #595959;
+}
+
+.dark-theme {
+    --bg-color: #0d1c3f;
+    --text-color: #dedede;
+    /* --navbar-bg-color: #bababa;
+    --navbar-text-color: #0d1c3f;
+    --hover-link-bg-color: #dddddd;
+    --hover-link-color: #000000;
+    --active-link-bg-color: blue; */
+    --navbar-bg-color: #363636;
+    --navbar-text-color: #dedede;
+    --hover-link-bg-color: #424242;
+    --hover-link-color: #ffffff;
+    --active-link-bg-color: #595959;
+}
+
+a {
+    text-decoration: none;
+}
+
 body {
     font-family: Arial, sans-serif;
     padding-top: 0;
     margin: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
 }
 
 body > *:not(#navbar) {
@@ -18,6 +49,7 @@ body > *:not(#navbar) {
     align-items: center;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.10);
     overflow: hidden;
+    background-color: var(--navbar-bg-color);
 }
 
 #navbar ul {
@@ -27,18 +59,33 @@ body > *:not(#navbar) {
     display: flex;
 }
 
-#navbar ul li {
-    padding: 14px 16px;
-}
-
 #navbar ul li a {
+    padding: 14px 16px;
     text-decoration: none;
     display: block;
+    color: var(--navbar-text-color);
 }
 
 #navbar ul li a:hover {
-    background-color: #ddd;
-    color: black;
+    background-color: var(--hover-link-bg-color);
+    color: var(--hover-link-color); 
+    border-radius: 5px; 
+}
+
+#navbar ul li a.active {
+    background-color: var(--active-link-bg-color); 
+    color: var(--hover-link-color); 
+    border-radius: 5px;
+}
+
+#navbar ul li a.active:hover {
+    background-color: var(--active-link-bg-color);
+    color: var(--hover-link-color);
+    border-radius: 5px;
+  }
+
+#scrollButton {
+    color: var(--text-color);
 }
 
 #profile {
@@ -60,11 +107,6 @@ body > *:not(#navbar) {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-}
-
-/* links.css */
-a {
-    text-decoration: none;
 }
 
 #links {
@@ -131,7 +173,6 @@ a {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
 }
 
-/* scroll.css */
 .scrollBtn {
     width: 140px;
     height: 56px;
@@ -234,7 +275,6 @@ a {
     }
 }
 
-/* switch.css */
 .theme-switch-wrapper {
     display: flex;
     align-items: center;
@@ -324,47 +364,6 @@ input:checked + .slider i.fa-sun {
     border-radius: 50%;
 }
 
-/* themes.css */
-.light-theme {
-    --bg-color: #bababa;
-    --text-color: #0d1c3f;
-    --navbar-bg-color: #0d1c3f;
-    --navbar-text-color: #bababa;
-}
-
-.dark-theme {
-    --bg-color: #0d1c3f;
-    --text-color: #bababa;
-    --navbar-bg-color: #bababa;
-    --navbar-text-color: #0d1c3f;
-}
-
-body {
-    background-color: var(--bg-color);
-    color: var(--text-color);
-}
-
-#navbar {
-    background-color: var(--navbar-bg-color);
-}
-
-#navbar ul li a {
-    color: var(--navbar-text-color);
-}
-
-#navbar {
-    background-color: var(--navbar-bg-color);
-}
-
-#scrollButton {
-    color: var(--text-color);
-}
-
-#navbar #profile li {
-    color: var(--navbar-text-color);
-}
-
-/* body.css */
 #personal-info {
     display: flex;
     justify-content: space-around;
