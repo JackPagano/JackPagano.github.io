@@ -2,32 +2,35 @@
 
 /* styles.css */
 .light-theme {
+    --link-color: #c429c7;
     --bg-color: #dedede;
     --text-color: #000000;
     --navbar-bg-color: #363636;
     --navbar-text-color: #dedede;
-    --hover-link-bg-color: #424242;
-    --hover-link-color: #ffffff;
-    --active-link-bg-color: #595959;
+    --navbar-hover-bg-color: #424242;
+    --navbar-hover-text-color: #ffffff;
+    --navbar-active-bg-color: #595959;
+    
 }
 
 .dark-theme {
+    --link-color: purple;
     --bg-color: #0d1c3f;
     --text-color: #dedede;
-    /* --navbar-bg-color: #bababa;
-    --navbar-text-color: #0d1c3f;
-    --hover-link-bg-color: #dddddd;
-    --hover-link-color: #000000;
-    --active-link-bg-color: blue; */
     --navbar-bg-color: #363636;
     --navbar-text-color: #dedede;
-    --hover-link-bg-color: #424242;
-    --hover-link-color: #ffffff;
-    --active-link-bg-color: #595959;
+    --navbar-hover-bg-color: #424242;
+    --navbar-hover-text-color: #ffffff;
+    --navbar-active-bg-color: #595959;
 }
 
 a {
     text-decoration: none;
+}
+
+.link {
+    color: var(--link-color);
+    text-decoration: underline;
 }
 
 body {
@@ -40,7 +43,7 @@ body {
 
 body > *:not(#navbar) {
     padding-top: 0;
-    margin-left: 53px;
+    margin-left: 72px;
 }
 
 #navbar {
@@ -67,20 +70,20 @@ body > *:not(#navbar) {
 }
 
 #navbar ul li a:hover {
-    background-color: var(--hover-link-bg-color);
-    color: var(--hover-link-color); 
+    background-color: var(--navbar-hover-bg-color);
+    color: var(--navbar-hover-text-color); 
     border-radius: 5px; 
 }
 
 #navbar ul li a.active {
-    background-color: var(--active-link-bg-color); 
-    color: var(--hover-link-color); 
+    background-color: var(--navbar-active-bg-color); 
+    color: var(--navbar-hover-text-color); 
     border-radius: 5px;
 }
 
 #navbar ul li a.active:hover {
-    background-color: var(--active-link-bg-color);
-    color: var(--hover-link-color);
+    background-color: var(--navbar-active-bg-color);
+    color: var(--navbar-hover-text-color);
     border-radius: 5px;
   }
 
@@ -93,6 +96,7 @@ body > *:not(#navbar) {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    gap: 10px;
 }
 
 #information {
@@ -364,44 +368,60 @@ input:checked + .slider i.fa-sun {
     border-radius: 50%;
 }
 
+#note {
+    height: 15vh;
+}
+
 #personal-info {
     display: flex;
     justify-content: space-around;
-    align-items: center;
     height: 70vh;
     flex-wrap: wrap;
 }
 
 #description {
-    width: 42%;
+    align-items: start;
+    width: 60%;
+    text-align: left;
+}
+
+#description-header {
     text-align: center;
 }
 
 #image-wrapper {
-    width: 42%;
+    width: 40%;
     display: flex;
     justify-content: center;
+    align-items: center;
+    padding-bottom: 250px;
 }
 
 #profile-picture {
+    max-width: 60%;
     border-radius: 50%;
     display: flex;
-    max-width: 60%;
-    height: auto;
+    
 }
 
-@media screen and (min-width: 930px) {
+@media screen and (min-width: 1100px) {
     #description {
-        width: 42%;
-        padding-left: 8%;
+        width: 53%;
+        padding-left: 6%;
     }
 
     #image-wrapper {
-        width: 42%;
-        padding-right: 8%;
+        width: 35%;
+        padding-right: 6%;
     }
 
     #profile-picture {
         max-width: 350px;
     }
 }
+
+#aboutme {
+    height: 40vh;
+}
+
+
