@@ -16,30 +16,49 @@
 <body>
     <!-- Navbar -->
     <div id="navbar">
-        <ul id="profile">
-            <li><a href="index.html">Home</a></li>
-            <li>
-                <div class="theme-switch-wrapper">
-                    <label class="theme-switch" for="checkbox">
-                    <input type="checkbox" id="checkbox" />
-                        <div class="slider round">
-                            <i class="fas fa-moon"></i>
-                            <i class="fas fa-sun"></i>
-                        </div>
-                    </label>
-                </div>
-            </li>
-        </ul>
-        <ul id="information">
-            <li><a href="education.html">Education</a></li>
-            <li><a href="experience.html">Work Experience</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="projects.html">Projects</a></li>
-        </ul>
-        <ul id="contacts">
-            <li><a href="#links">Links</a></li>
-            <li><a href="contactme.html">Contact Me</a></li>
-        </ul>
+        <div id="profile-container">
+            <ul id="profile">
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <div class="theme-switch-wrapper">
+                        <label class="theme-switch" for="checkbox">
+                        <input type="checkbox" id="checkbox" />
+                            <div class="slider round">
+                                <i class="fas fa-moon"></i>
+                                <i class="fas fa-sun"></i>
+                            </div>
+                        </label>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="information-container">
+            <ul id="information">
+                <li><a href="education.html">Education</a></li>
+                <li><a href="experience.html">Work Experience</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+        </div>
+        <div id="contacts-container">
+            <ul id="contacts">
+                <li><a href="#links">Links</a></li>
+                <li><a href="contactme.html">Contact Me</a></li>
+            </ul>
+        </div>
+        <div id="hamburger">
+            <i class="fas fa-bars" id="hamburger-icon"></i>
+            <div id="dropdown-container">
+                <ul id="dropdown-content">
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="experience.html">Work Experience</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="#links">Links</a></li>
+                    <li><a href="contactme.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
 
     <!-- Projects -->

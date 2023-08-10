@@ -48,7 +48,6 @@ body > *:not(#navbar) {
 
 #navbar {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.10);
     overflow: hidden;
@@ -67,6 +66,7 @@ body > *:not(#navbar) {
     text-decoration: none;
     display: block;
     color: var(--navbar-text-color);
+    white-space: nowrap;
 }
 
 #navbar ul li a:hover {
@@ -85,17 +85,31 @@ body > *:not(#navbar) {
     background-color: var(--navbar-active-bg-color);
     color: var(--navbar-hover-text-color);
     border-radius: 5px;
-  }
+}
 
-#scrollButton {
-    color: var(--text-color);
+#profile-container,
+#information-container,
+#contacts-container {
+    flex: 1;
+    display: flex;
+}
+
+#profile-container{
+    justify-content: flex-start;
+}
+
+#information-container{
+    justify-content: center;
+}
+
+#contacts-container{
+    justify-content: flex-end;
 }
 
 #profile {
     list-style-type: none;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
     gap: 10px;
 }
 
@@ -103,14 +117,75 @@ body > *:not(#navbar) {
     list-style-type: none;
     display: flex;
     align-items: center;
-    justify-content: center;
+    gap: 2px;
 }
 
 #contacts {
     list-style-type: none;
     display: flex;
     align-items: center;
+    gap: 2px;
+}
+
+#hamburger {
+    display: none;
+    color: var(--navbar-text-color);
+    align-items: center;
     justify-content: flex-end;
+    padding-right: 20px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#content {
+    position: relative;
+    z-index: 1;
+}
+
+#dropdown-container {
+    position: absolute;
+    top: 46px;
+    right: 0;
+    background-color: rgba(54, 54, 54, 0.8); 
+    width: 170px; /* Adjust width as needed */
+    height: 282px; /* Cover the entire height of the screen */
+    display: none;
+    z-index: 2; /* On top of the content */
+    backdrop-filter: blur(2px); /* Add backdrop-filter for better transparency */
+}
+
+#dropdown-content {
+    flex-direction: column;
+}
+
+#dropdown-content li{
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* Optional: Add a separator */
+}
+
+#dropdown-content li a{
+    padding: 10px;
+    font-size: 16px; /* Adjust text size as needed */
+    text-align: center;
+}
+
+#dropdown-content li:last-child{
+    border-bottom: none;
+}
+
+#dropdown-container.open {
+    display: block;
+}
+
+@media screen and (max-width: 1000px) {
+    #information-container,
+    #contacts-container {
+        display: none;
+    }
+
+    #hamburger {
+        display: flex;
+    }
 }
 
 #links {
@@ -143,7 +218,7 @@ body > *:not(#navbar) {
 .icon-button span {
     display: none;
     text-align: center;
-    padding-right: 20px;
+    padding-right: 24px;
 }
 
 .icon-button:hover span {
@@ -175,6 +250,10 @@ body > *:not(#navbar) {
     background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
     background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+}
+
+#scrollButton {
+    color: var(--text-color);
 }
 
 .scrollBtn {
@@ -349,7 +428,7 @@ input:checked + .slider {
 }
 
 input:checked + .slider:before {
-    transform: translateX(26px);
+    transform: translateX(25.5px);
 }
 
 input:checked + .slider i.fa-moon {
@@ -394,7 +473,7 @@ input:checked + .slider i.fa-sun {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 300px;
+    padding-bottom: 250px;
 }
 
 #profile-picture {
@@ -423,5 +502,3 @@ input:checked + .slider i.fa-sun {
 #aboutme {
     height: 40vh;
 }
-
-

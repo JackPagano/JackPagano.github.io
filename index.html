@@ -19,34 +19,53 @@
 <body>
     <!-- Navbar -->
     <div id="navbar">
-        <ul id="profile">
-            <li><a href="index.html">Home</a></li>
-            <li>
-                <div class="theme-switch-wrapper">
-                    <label class="theme-switch" for="checkbox">
-                    <input type="checkbox" id="checkbox" />
-                        <div class="slider round">
-                            <i class="fas fa-moon"></i>
-                            <i class="fas fa-sun"></i>
-                        </div>
-                    </label>
-                </div>
-            </li>
-        </ul>
-        <ul id="information">
-            <li><a href="education.html">Education</a></li>
-            <li><a href="experience.html">Work Experience</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="projects.html">Projects</a></li>
-        </ul>
-        <ul id="contacts">
-            <li><a href="#links">Links</a></li>
-            <li><a href="contactme.html">Contact Me</a></li>
-        </ul>
+        <div id="profile-container">
+            <ul id="profile">
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <div class="theme-switch-wrapper">
+                        <label class="theme-switch" for="checkbox">
+                        <input type="checkbox" id="checkbox" />
+                            <div class="slider round">
+                                <i class="fas fa-moon"></i>
+                                <i class="fas fa-sun"></i>
+                            </div>
+                        </label>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="information-container">
+            <ul id="information">
+                <li><a href="education.html">Education</a></li>
+                <li><a href="experience.html">Work Experience</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+        </div>
+        <div id="contacts-container">
+            <ul id="contacts">
+                <li><a href="#links">Links</a></li>
+                <li><a href="contactme.html">Contact Me</a></li>
+            </ul>
+        </div>
+        <div id="hamburger">
+            <i class="fas fa-bars" id="hamburger-icon"></i>
+            <div id="dropdown-container">
+                <ul id="dropdown-content">
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="experience.html">Work Experience</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="#links">Links</a></li>
+                    <li><a href="contactme.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
 
     <!-- Home -->
-    <main>
+    <main id="content">
         <h1>Jack's Portfolio</h1>
         <h3 id="note">Note: My site is constantly evolving, growing, and improving, just like me.</h3>
         
@@ -80,8 +99,6 @@
             <p>During my free time, I find balance in family time, going to the gym, and playing guitar. In a world that's increasingly digital, 
             I strive for a harmonious blend of technology, creativity, and personal growth.</p>
         </div>
-        
-
     </main>
     
     <!-- Links -->

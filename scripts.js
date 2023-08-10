@@ -2,6 +2,7 @@
 
 // scripts.js
 document.addEventListener("DOMContentLoaded", function() {
+  console.log
   const scrollButton = document.getElementById('scrollButton');
   const switchTheme = document.querySelector('#checkbox');
   const body = document.body;
@@ -70,4 +71,19 @@ document.addEventListener("DOMContentLoaded", function() {
   
   // Initial update of scroll button visibility
   updateScrollButtonVisibility();
+
+  const hamburger = document.getElementById("hamburger");
+  const dropdownContainer = document.getElementById("dropdown-container");
+  hamburger.addEventListener("click", function() {
+    this.classList.toggle("open");
+    dropdownContainer.classList.toggle("open");
+  });
+
+  const dropdownLinks = document.querySelectorAll("#dropdown-content li a");
+  dropdownLinks.forEach((link) => {
+    link.addEventListener("click", function() {
+      dropdownContainer.classList.remove("open");
+      hamburger.classList.remove("open");
+    });
+});
 });
