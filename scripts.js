@@ -7,15 +7,6 @@ document.addEventListener("DOMContentLoaded", function() {
   const switchTheme = document.querySelector('#checkbox');
   const body = document.body;
 
-  // // Send Email Button (Work in Progress)
-  // document.getElementById("contact-form").addEventListener("submit", function(event) {
-  //   event.preventDefault();
-  //   const email = document.getElementById("email").value;
-  //   const message = document.getElementById("message").value;
-  //   // Perform an AJAX request to the server-side script and pass the email and body data
-  //   // Use a library like Axios or fetch to send the data to a server-side script for email processing
-  // });
-
   // Function to set the active link based on the current page URL
   function setActiveLink() {
     const currentPageUrl = window.location.href;
@@ -72,18 +63,31 @@ document.addEventListener("DOMContentLoaded", function() {
   // Initial update of scroll button visibility
   updateScrollButtonVisibility();
 
+  // Open/close the dropdown menu
   const hamburger = document.getElementById("hamburger");
+  const hamburgerIcon = document.getElementById("hamburger-icon");
+  const closeIcon = document.getElementById("close-icon");
   const dropdownContainer = document.getElementById("dropdown-container");
   hamburger.addEventListener("click", function() {
     this.classList.toggle("open");
     dropdownContainer.classList.toggle("open");
-  });
 
-  const dropdownLinks = document.querySelectorAll("#dropdown-content li a");
-  dropdownLinks.forEach((link) => {
-    link.addEventListener("click", function() {
-      dropdownContainer.classList.remove("open");
-      hamburger.classList.remove("open");
-    });
+    if (this.classList.contains("open")) {
+      hamburgerIcon.style.display = "none";
+      closeIcon.style.display = "block";
+    } else {
+      hamburgerIcon.style.display = "block";
+      closeIcon.style.display = "none";
+    }
+  });
 });
-});
+
+
+// // Send Email Button (Work in Progress)
+// document.getElementById("contact-form").addEventListener("submit", function(event) {
+//   event.preventDefault();
+//   const email = document.getElementById("email").value;
+//   const message = document.getElementById("message").value;
+//   // Perform an AJAX request to the server-side script and pass the email and body data
+//   // Use a library like Axios or fetch to send the data to a server-side script for email processing
+// });

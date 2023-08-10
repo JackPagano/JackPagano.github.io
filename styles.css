@@ -1,3 +1,6 @@
+
+
+/*------------------------------- styles.css -------------------------------*/
 /* Themes */
 .light-theme {
     --link-color: #c429c7;
@@ -22,6 +25,7 @@
     --navbar-active-bg-color: #595959;
 }
 
+
 /* General */
 a {
     text-decoration: none;
@@ -44,6 +48,7 @@ body > *:not(#navbar) {
     padding-top: 0;
     margin-left: 72px;
 }
+
 
 /* Navbar */
 #navbar {
@@ -148,7 +153,7 @@ body > *:not(#navbar) {
     right: 0;
     background-color: rgba(54, 54, 54, 0.8); 
     width: 170px; /* Adjust width as needed */
-    height: 282px; /* Cover the entire height of the screen */
+    height: 281px; /* Cover the entire height of the screen */
     display: none;
     z-index: 2; /* On top of the content */
     backdrop-filter: blur(2px); /* Add backdrop-filter for better transparency */
@@ -177,7 +182,7 @@ body > *:not(#navbar) {
     display: block;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 800px) {
     #information-container,
     #contacts-container {
         display: none;
@@ -187,6 +192,7 @@ body > *:not(#navbar) {
         display: flex;
     }
 }
+
 
 /* Links */
 #links {
@@ -253,6 +259,8 @@ body > *:not(#navbar) {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
 }
 
+
+/* Scroll Button */
 #scrollButton {
     color: var(--text-color);
 }
@@ -359,6 +367,8 @@ body > *:not(#navbar) {
     }
 }
 
+
+/* Theme Toggle Switch */
 .theme-switch-wrapper {
     display: flex;
     align-items: center;
@@ -448,6 +458,8 @@ input:checked + .slider i.fa-sun {
     border-radius: 50%;
 }
 
+
+/* Body Styling */
 #note {
     height: 15vh;
 }
