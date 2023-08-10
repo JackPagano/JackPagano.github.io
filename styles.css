@@ -149,12 +149,13 @@ body > *:not(#navbar) {
 
 #dropdown-container {
     position: absolute;
+    display: none;
     top: 46px;
     right: 0;
     background-color: rgba(54, 54, 54, 0.8); 
     width: 170px; /* Adjust width as needed */
-    height: 281px; /* Cover the entire height of the screen */
-    display: none;
+    height: 281px; 
+    overflow-y: auto;
     z-index: 2; /* On top of the content */
     backdrop-filter: blur(2px); /* Add backdrop-filter for better transparency */
 }
