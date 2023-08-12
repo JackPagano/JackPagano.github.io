@@ -515,4 +515,5 @@ input:checked + .slider i.fa-sun {
 
 #aboutme {
     height: 40vh;
+    padding-right: 150px;
 }
