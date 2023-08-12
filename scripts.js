@@ -1,6 +1,6 @@
 
 
-// scripts.js
+/*------------------------------- scripts.js -------------------------------*/
 document.addEventListener("DOMContentLoaded", function() {
   console.log
   const scrollButton = document.getElementById('scrollButton');
