@@ -259,18 +259,18 @@ input:checked + .slider i.fa-sun {
     flex-direction: column;
 }
 
-#dropdown-content li{
+#dropdown-content li {
     align-items: center;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* Optional: Add a separator */
 }
 
-#dropdown-content li a{
+#dropdown-content li a {
     padding: 10px;
     font-size: 16px; /* Adjust text size as needed */
     text-align: center;
 }
 
-#dropdown-content li:last-child{
+#dropdown-content li:last-child {
     border-bottom: none;
 }
 
@@ -510,6 +510,8 @@ input:checked + .slider i.fa-sun {
 
 
 /* Body Styling */
+
+
     /* Home */
 #note {
     height: 15vh;
