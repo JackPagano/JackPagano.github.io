@@ -573,8 +573,14 @@ input:checked + .slider i.fa-sun {
     #personal-info {
         height: 1200px;
     }
+
+    #description {
+        padding-left: 0;
+    }
+
     #about-me {
         height: 600px;
+        padding-right: 0;
     }
 }
 
