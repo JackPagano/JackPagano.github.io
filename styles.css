@@ -593,6 +593,10 @@ input:checked + .slider i.fa-sun {
         align-items: start;
     }
 
+    #personal-info{
+        height: 800px;
+    }
+
     #description {
         flex-direction: column;
         width: 100%;
@@ -611,6 +615,7 @@ input:checked + .slider i.fa-sun {
 
     #about-me {
         padding-right: 0;
+        height: 400px;
     }
 }
 
