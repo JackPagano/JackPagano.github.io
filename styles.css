@@ -571,15 +571,38 @@ input:checked + .slider i.fa-sun {
 
 @media only screen and (max-width: 600px) {
     #personal-info {
-        height: 1200px;
+        height: auto; /* Adjust height to be automatic */
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center elements horizontally */
+        justify-content: center; /* Center elements vertically */
     }
 
     #description {
+        width: 100%; /* Use full width */
+        text-align: center; /* Center the text */
+        order: 1; /* Set order to push it below the image */
+        padding: 20px 0; /* Add padding to separate elements */
         padding-left: 0;
     }
 
+    #p1, #p2 {
+        max-width: 85%; /* Restrict width to improve readability */
+        margin: 0 auto; /* Center them */
+    }
+
+    #image-wrapper {
+        order: 2; /* Set order to position it between #p1 and #p2 */
+        padding-bottom: 20px; /* Add padding to separate elements */
+    }
+
+    #profile-picture {
+        max-width: 90%; /* Adjust image size for mobile */
+        height: auto; /* Make height adjust according to width */
+    }
+
     #about-me {
-        height: 600px;
+        height: auto;
+        padding: 0; /* Reset padding for mobile */
         padding-right: 0;
     }
 }
