@@ -36,6 +36,7 @@ a {
 .link {
     text-decoration: underline;
     color: var(--link-color);
+    font-weight: bold;
 }
 
 .link:hover {
