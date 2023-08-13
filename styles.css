@@ -581,6 +581,10 @@ input:checked + .slider i.fa-sun {
         margin-right: 40px;
     }
 
+    #dropdown-container{
+        height: 300px;
+    }
+
     .mobile-centered {
         display: flex;
         align-items: center;
