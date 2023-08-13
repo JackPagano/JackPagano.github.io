@@ -3,11 +3,9 @@
 /*------------------------------- scripts.js -------------------------------*/
 document.addEventListener("DOMContentLoaded", function() {
   console.log
-  const scrollButton = document.getElementById('scrollButton');
-  const switchTheme = document.querySelector('#checkbox');
   const body = document.body;
 
-  // Function to set the active link based on the current page URL
+  // Function to set the active page in the navbar
   function setActiveLink() {
     const currentPageUrl = window.location.href;
     const navLinks = document.querySelectorAll("#navbar ul li a");
@@ -20,48 +18,22 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     });
   }
-
-  // Set the active link on page load
-  setActiveLink();
   
-  // Theme Switch Button
+  // Theme Switch Toggle
+  const switchTheme = document.querySelector('#checkbox');
   function toggleTheme() {
     body.classList.toggle('dark-theme');
     body.classList.toggle('light-theme');
     const theme = body.classList.contains('dark-theme') ? 'dark-theme' : 'light-theme';
     localStorage.setItem('theme', theme);
   }
-  
-  switchTheme.addEventListener('change', toggleTheme);
-  
-  // Scroll Up Button
-  function updateScrollButtonVisibility() {
-    if (window.scrollY >= 300) {
-      scrollButton.style.display = 'block';
-      scrollButton.disabled = false;
-    } else {
-      scrollButton.style.display = 'none';
-      scrollButton.disabled = true;
-    }
-  }
-  
-  window.addEventListener('scroll', updateScrollButtonVisibility);
-  
+
   // Restore theme preference if set
   const storedTheme = localStorage.getItem('theme');
   if (storedTheme) {
     body.classList.add(storedTheme);
     switchTheme.checked = storedTheme === 'dark-theme';
-  } else {
-    // Set default theme based on system preference
-    const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark-theme' : 'light-theme';
-    body.classList.add(systemTheme);
-    switchTheme.checked = systemTheme === 'dark-theme';
-    localStorage.setItem('theme', systemTheme);
   }
-  
-  // Initial update of scroll button visibility
-  updateScrollButtonVisibility();
 
   // Open/close the dropdown menu
   const hamburger = document.getElementById("hamburger");
@@ -80,6 +52,24 @@ document.addEventListener("DOMContentLoaded", function() {
       closeIcon.style.display = "none";
     }
   });
+  
+  // Scroll Up Button
+  const scrollButton = document.getElementById('scrollButton');
+  function updateScrollButtonVisibility() {
+    if (window.scrollY >= 300) {
+      scrollButton.style.display = 'block';
+      scrollButton.disabled = false;
+    } else {
+      scrollButton.style.display = 'none';
+      scrollButton.disabled = true;
+    }
+  }
+
+  setActiveLink(); // Initial update of active page
+  updateScrollButtonVisibility(); // Initial update of scroll button visibility
+
+  window.addEventListener('scroll', updateScrollButtonVisibility);
+  switchTheme.addEventListener('change', toggleTheme);
 });
 
 
