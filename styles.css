@@ -564,9 +564,18 @@ input:checked + .slider i.fa-sun {
     }
 }
 
-#aboutme {
-    height: 60vh;
-    padding-right: 150px;
+#about-me {
+    height: 40vh;
+    padding-right: 200px;
+}
+
+@media only screen and (max-width: 600px) {
+    #personal-info {
+        height: 1200px;
+    }
+    #about-me {
+        height: 600px;
+    }
 }
 
     /* Contact Me */
