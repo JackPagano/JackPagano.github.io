@@ -618,6 +618,7 @@ input:checked + .slider i.fa-sun {
     }
 
     #about-me {
+        align-items: start;
         padding-right: 0;
         height: 700px;
     }
