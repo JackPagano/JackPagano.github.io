@@ -322,6 +322,10 @@ input:checked + .slider i.fa-sun {
     animation: none;
 }
 
+.start-animation {
+    animation: attention 1.2s linear infinite;
+}
+
 @keyframes attention {
     0%, 100%{
       transform: translateX(20%);
