@@ -312,7 +312,7 @@ input:checked + .slider i.fa-sun {
 }
 
 .learn-more-btn .fas.fa-arrow-right{
-    transform: translateZ(0);
+    transform: translateX(40%);
     transition: 0.2s linear;
     animation: attention 1.2s linear infinite;
 }
