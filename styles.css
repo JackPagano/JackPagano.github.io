@@ -582,7 +582,7 @@ input:checked + .slider i.fa-sun {
     }
 
     #dropdown-container{
-        height: 400px;
+        height: 300px;
     }
 
     .mobile-centered {
@@ -598,7 +598,7 @@ input:checked + .slider i.fa-sun {
     }
 
     #personal-info{
-        height: 1200px;
+        height: 1000px;
     }
 
     #description {
@@ -619,7 +619,7 @@ input:checked + .slider i.fa-sun {
 
     #about-me {
         padding-right: 0;
-        height: 1000px;
+        height: 800px;
     }
 }
 
