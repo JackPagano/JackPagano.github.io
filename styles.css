@@ -575,14 +575,14 @@ input:checked + .slider i.fa-sun {
     padding-right: 200px;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 700px) {
     body > *:not(#navbar) {
         margin-left: 40px;
         margin-right: 40px;
     }
 
     #dropdown-container{
-        height: 290px;
+        height: 292px;
     }
 
     .mobile-centered {
