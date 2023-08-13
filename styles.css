@@ -594,7 +594,7 @@ input:checked + .slider i.fa-sun {
     }
 
     #personal-info{
-        height: 800px;
+        height: 1000px;
     }
 
     #description {
@@ -615,7 +615,7 @@ input:checked + .slider i.fa-sun {
 
     #about-me {
         padding-right: 0;
-        height: 400px;
+        height: 700px;
     }
 }
 
