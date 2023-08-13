@@ -575,7 +575,7 @@ input:checked + .slider i.fa-sun {
     padding-right: 200px;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 600px) {
     body > *:not(#navbar) {
         margin-left: 40px;
         margin-right: 40px;
@@ -598,7 +598,7 @@ input:checked + .slider i.fa-sun {
     }
 
     #personal-info{
-        height: 1000px;
+        height: 1200px;
     }
 
     #description {
@@ -618,9 +618,8 @@ input:checked + .slider i.fa-sun {
     }
 
     #about-me {
-        align-items: start;
         padding-right: 0;
-        height: 700px;
+        height: 1000px;
     }
 }
 
