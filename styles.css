@@ -270,6 +270,19 @@ input:checked + .slider i.fa-sun {
     text-align: center;
 }
 
+#dropdown-content li a.active {
+    background-color: var(--navbar-active-bg-color); 
+    color: var(--navbar-hover-text-color); 
+    border-radius: 5px;
+}
+
+#dropdown-content li a.active:hover {
+    background-color: var(--navbar-active-bg-color);
+    color: var(--navbar-hover-text-color);
+    border-radius: 5px;
+}
+
+
 #dropdown-content li:last-child {
     border-bottom: none;
 }
@@ -584,10 +597,6 @@ input:checked + .slider i.fa-sun {
     body > *:not(#navbar) {
         margin-left: 40px;
         margin-right: 40px;
-    }
-
-    #dropdown-container{
-        height: 294px;
     }
 
     .mobile-centered {

@@ -65,10 +65,6 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   }
 
-  // Set Initial Arrow Animation (Mobile Devices)
-  const arrow = document.querySelector('.learn-more-btn .fas.fa-arrow-right');
-  arrow.classList.add('start-animation');
-
   setActiveLink(); // Initial update of active page
   updateScrollButtonVisibility(); // Initial update of scroll button visibility
 
