@@ -1,10 +1,7 @@
-
-
-/*------------------------------- styles.css -------------------------------*/
 /* Themes */
 .light-theme {
     --link-color: #c429c7;
-    --link-highlight-color: #ff3838;
+    --link-highlight-color: #d21e1e;
     --bg-color: #dedede;
     --text-color: #0d1c3f;
     --navbar-bg-color: #363636;
@@ -12,6 +9,7 @@
     --navbar-hover-bg-color: #424242;
     --navbar-hover-text-color: #ffffff;
     --navbar-active-bg-color: #595959;
+    --warning-color: #d21e1e;
     
 }
 
@@ -25,6 +23,7 @@
     --navbar-hover-bg-color: #424242;
     --navbar-hover-text-color: #ffffff;
     --navbar-active-bg-color: #595959;
+    --warning-color: #9e2e2e;
 }
 
 
@@ -54,6 +53,10 @@ body {
 body > *:not(#navbar) {
     padding-top: 0;
     margin-left: 72px;
+}
+
+.note {
+    color: var(--warning-color);
 }
 
 
@@ -528,126 +531,147 @@ input:checked + .slider i.fa-sun {
 
 
 /* Body Styling */
-
-
     /* Home */
-#note {
-    height: 15vh;
-}
-
-#content {
-    position: relative;
-    z-index: 1;
-}
-
-#personal-info {
-    display: flex;
-    justify-content: space-around;
-    height: 80vh;
-    flex-wrap: wrap;
-}
-
-#description {
-    align-items: start;
-    width: 60%;
-    text-align: left;
-}
-
-#description-header {
-    text-align: center;
-}
-
-#image-wrapper2 {
-    width: 40%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 350px;
-}
-
-#pfp1 {
-    display: none;
-}
-
-#pfp2 {
-    height: 30vw;
-    width: 30vw;
-    border-radius: 50%;
-    display: flex;
-}
-
-@media screen and (min-width: 1175px) {
-    #description {
-        width: 53%;
-        padding-left: 6%;
+    #warning {
+        height: 15vh;
     }
 
-    #pfp2 {
-        width: 350px;
-        height: 350px;
-    }
-}
-
-#about-me {
-    height: 40vh;
-    padding-right: 200px;
-}
-
-@media only screen and (max-width: 800px) {
-    body > *:not(#navbar) {
-        margin-left: 40px;
-        margin-right: 40px;
+    #content {
+        position: relative;
+        z-index: 1;
     }
 
-    .mobile-centered {
+    #personal-info {
         display: flex;
-        align-items: center;
-        justify-content: center;
+        justify-content: space-around;
+        height: 80vh;
+        flex-wrap: wrap;
+    }
+
+    #description {
+        align-items: start;
+        width: 60%;
+        text-align: left;
+    }
+
+    #description-header {
         text-align: center;
     }
 
-    #note {
-        height: 10vh;
-        align-items: start;
-    }
-
-    #personal-info{
-        height: 1000px;
-    }
-
-    #description {
-        flex-direction: column;
-        width: 100%;
+    #image-wrapper2 {
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 350px;
     }
 
     #pfp1 {
+        display: none;
+    }
+
+    #pfp2 {
         height: 30vw;
         width: 30vw;
         border-radius: 50%;
         display: flex;
     }
 
-    #pfp2 {
-        display: none;
+    @media screen and (min-width: 1175px) {
+        #description {
+            width: 53%;
+            padding-left: 6%;
+        }
+
+        #pfp2 {
+            width: 350px;
+            height: 350px;
+        }
     }
 
     #about-me {
-        padding-right: 0;
-        height: 600px;
+        height: 40vh;
+        padding-right: 200px;
     }
-}
+
+    @media only screen and (max-width: 800px) {
+        body > *:not(#navbar) {
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+
+        .mobile-centered {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        #warning {
+            height: 10vh;
+            align-items: start;
+        }
+
+        #personal-info{
+            height: 1000px;
+        }
+
+        #description {
+            flex-direction: column;
+            width: 100%;
+        }
+
+        #pfp1 {
+            height: 30vw;
+            width: 30vw;
+            border-radius: 50%;
+            display: flex;
+        }
+
+        #pfp2 {
+            display: none;
+        }
+
+        #about-me {
+            padding-right: 0;
+            height: 600px;
+        }
+    }
+
+
+    /* Education */
+    .education-section {
+        padding: 10px 0;
+        max-width: 800px;
+        margin: 10px;
+    }
+    
+    .education-section li {
+        margin-bottom: 5px;
+    }
+
+    /* Experience */
+    .experience-section {
+        padding: 10px 0;
+        max-width: 800px;
+        margin: 10px;
+    }
+    
+    .experience-section li {
+        margin-bottom: 5px;
+    }
+
 
     /* Contact Me */
+    #subject {
+        padding-bottom: 5px;
+    }
 
-#subject{
-    padding-bottom: 5px;
-}
+    #name,#email {
+        width: 300px;
+    }
 
-#name,#email{
-    width: 300px;
-}
-
-#message{
-    width: 614px;
-    max-width: 85vw;
-}
+    #message {
+        width: 614px;
+        max-width: 85vw;
+    }

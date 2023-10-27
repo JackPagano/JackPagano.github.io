@@ -1,6 +1,3 @@
-
-
-/*------------------------------- scripts.js -------------------------------*/
 document.addEventListener("DOMContentLoaded", function() {
   console.log
   const body = document.body;
