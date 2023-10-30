@@ -357,6 +357,8 @@ input:checked + .slider i.fa-sun {
 
 /* Links */
 #links {
+    margin-top: 0;
+    padding-top: 0;
     margin-left: -30px;
     display: flex;
     gap: 10px;
@@ -533,6 +535,14 @@ input:checked + .slider i.fa-sun {
 
 
 /* Body Styling */
+    .main-section {
+        padding: 10px 0;
+        margin: 10px;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    
     /* Home */
     #warning {
         height: 20vh;
@@ -642,11 +652,6 @@ input:checked + .slider i.fa-sun {
 
 
     /* Education */
-    .education-section {
-        padding: 10px 0;
-        margin: 10px;
-    }
-
     .education-info h3 {
         margin-top: 0;
         margin-bottom: 0;
@@ -663,15 +668,6 @@ input:checked + .slider i.fa-sun {
     
 
     /* Experience */
-    .experience-section {
-        padding: 10px 0;
-        margin: 10px;
-    }
-
-    .work-experience {
-        padding-bottom: 10px;
-    }
-
     .work-experience h3, h4 {
         margin-top: 0;
         margin-bottom: 0;
@@ -684,7 +680,7 @@ input:checked + .slider i.fa-sun {
 
     .work-experience ul {
         margin-top: 8px;
-        margin-bottom: 15px;
+        margin-bottom: 20px;
     }
 
     .work-experience ul li {
@@ -693,9 +689,18 @@ input:checked + .slider i.fa-sun {
     
 
     /* Skills */
-    .skills-section {
-        padding: 10px 0;
-        margin: 10px;
+    .skills-info h3 {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .skills-info ul{
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+
+    .skills-info ul li {
+        margin-bottom: 5px;
     }
 
 
