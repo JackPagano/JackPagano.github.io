@@ -690,8 +690,15 @@ input:checked + .slider i.fa-sun {
     .work-experience ul li {
         margin-bottom: 5px;
     }
-
     
+
+    /* Skills */
+    .skills-section {
+        padding: 10px 0;
+        margin: 10px;
+    }
+
+
     /* Contact Me */
     #subject {
         padding-bottom: 5px;
