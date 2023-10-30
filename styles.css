@@ -57,6 +57,8 @@ body > *:not(#navbar) {
 
 .note {
     color: var(--warning-color);
+    margin-bottom: 0;
+    margin-top: 0;
 }
 
 
@@ -642,26 +644,54 @@ input:checked + .slider i.fa-sun {
     /* Education */
     .education-section {
         padding: 10px 0;
-        max-width: 800px;
         margin: 10px;
     }
-    
-    .education-section li {
+
+    .education-info h3 {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .education-info ul{
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+
+    .education-info ul li {
         margin-bottom: 5px;
     }
+    
 
     /* Experience */
     .experience-section {
         padding: 10px 0;
-        max-width: 800px;
         margin: 10px;
     }
-    
-    .experience-section li {
+
+    .work-experience {
+        padding-bottom: 10px;
+    }
+
+    .work-experience h3, h4 {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .work-experience p {
+        margin-top: 5px;
+        margin-bottom: 0;
+    }
+
+    .work-experience ul {
+        margin-top: 8px;
+        margin-bottom: 15px;
+    }
+
+    .work-experience ul li {
         margin-bottom: 5px;
     }
 
-
+    
     /* Contact Me */
     #subject {
         padding-bottom: 5px;
